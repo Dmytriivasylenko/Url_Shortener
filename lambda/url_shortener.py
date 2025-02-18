@@ -38,14 +38,14 @@ def shorten_url(event, context):
 
     long_url = body['long_url']
 
-    # Налаштування часу дії URL (TTL) – наприклад, 5 хвилин
-    ttl_seconds = 5 * 60  # Наприклад, 5 хвилин
+    # Налаштування часу дії URL (TTL)
+    ttl_seconds = 5 * 60
     expire_at = int(time.time()) + ttl_seconds  # Поточний час + 5 хвилин
 
     # Створення короткого URL
     short_key = generate_short_key()
 
-    # Вставка даних в таблицю DynamoDB
+    # Вставка даних DynamoDB
     table.put_item(
         Item={
             'short_key': short_key,
