@@ -1,5 +1,18 @@
 
-# Welcome to your CDK Python project!
+# AWS CDK Python Project 🚀
+Infrastructure-as-Code project using AWS CDK with Python. Deploy cloud resources with modern DevOps practices.
+
+## 📌 Project Structure
+cdk-python-project/
+├── app.py # CDK app entry point
+├── cdk.json # CDK toolkit config
+├── requirements.txt # Dependencies
+├── setup.py
+├── README.md # This file
+├── .venv/ # Python virtualenv
+└── stacks/ # Custom CDK stacks
+└── example_stack.py # Sample resource stack
+
 
 This is a blank project for CDK development with Python.
 
